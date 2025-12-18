@@ -1,6 +1,4 @@
-// ==============================
-// Functions (Logic)
-// ==============================
+//logic
 
 function changeBackgroundColor() {
   const r = Math.floor(Math.random() * 256)
@@ -30,10 +28,7 @@ function displayUserInput() {
   }
 }
 
-// ==============================
-// Event Listener Setup
-// ==============================
-
+//listeners
 function setupEventListeners() {
   const changeColorButton = document.getElementById("changeColorButton")
   const resetColorButton = document.getElementById("resetColorButton")
@@ -54,17 +49,12 @@ function setupEventListeners() {
   document.addEventListener("keydown", displayKeyPress)
 }
 
-// ==============================
-// Browser Init
-// ==============================
-
+//init browser
 if (typeof document !== "undefined") {
   document.addEventListener("DOMContentLoaded", setupEventListeners)
 }
 
-// ==============================
-// Exports for Jest
-// ==============================
+//jest export
 
 module.exports = {
   changeBackgroundColor,
